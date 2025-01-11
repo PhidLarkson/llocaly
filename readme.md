@@ -2,6 +2,7 @@
 
 A streamlit-based interface for interacting with local AI models through Ollama.
 
+
 ## 🚀 Features
 
 - **Local Model Integration**: Seamless interaction with locally hosted models via Ollama
