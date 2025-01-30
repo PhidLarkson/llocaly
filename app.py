@@ -140,6 +140,7 @@ def main():
 
     # Sidebar
     with st.sidebar:
+        st.title("Llocaly")
         
         # Model Selection
         st.subheader("Model Configuration")
