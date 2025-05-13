@@ -8,11 +8,13 @@ A streamlit-based interface for interacting with local AI models through Ollama.
 
 ## 🚀 Features
 
-- **Local Model Integration**: Seamless interaction with locally hosted models via Ollama
-- **System Monitoring**: CPU, RAM, and GPU data
-- **Performance Metrics**: Track response times and token generation rates
-- **Modern Interface**: Clean, minimalist design with a professional dark theme
-- **Export Capabilities**: Save your chat sessions and performance data
+- 🤖 Query locally installed Ollama models
+- 📝 Chat with multiple models simultaneously
+- 💾 Enable or disable memory retention per model
+- 🔄 Start new chat sessions anytime
+- 📱 Connect from other devices using QR code
+- 💻 Works completely offline
+
 
 ## 📋 Prerequisites
 
@@ -28,15 +30,31 @@ git clone https://github.com/PhidLarkson/llocaly.git
 cd llocaly
 ```
 
-2. Install required packages:
-```bash
-pip install -r requirements.txt
-```
+### Windows
 
-3. Run the application:
-```bash
-streamlit run app.py
-```
+1. Double-click `start.bat`
+2. A browser window will automatically open with the LLocaly interface
+
+### Linux/macOS
+
+1. Make the start script executable:
+   ```bash
+   chmod +x start.sh
+   ```
+2. Double-click `start.sh` or run it from the terminal:
+   ```bash
+   ./start.sh
+   ```
+
+## How to Use
+
+1. Select models from the sidebar
+2. Send messages in the chat input at the bottom
+3. View responses from each model in separate tabs
+4. Toggle memory for individual models as needed
+5. Start a new chat session with the "New Chat Session" button
+6. Connect from other devices on the same network using the QR code
+
 
 ## 🤝 Contributing
 
@@ -45,35 +63,21 @@ We welcome contributions! llocaly is open for improvements, particularly in thes
 ### Priority Areas for Contribution
 
 1. **Memory Management**
-   - Implement persistent conversation memory
-   - Add conversation context management
-   - Develop memory optimization strategies
+   - Add RAG 
+   - Add file query feature
 
 2. **Model Integration**
    - Expand support for different model formats
-   - Improve model loading and switching
-   - Add model performance benchmarking
-
-3. **UI/UX Improvements**
-   - Enhanced visualization of system metrics
-   - Customizable themes
-   - Responsive design improvements
+   - Improve model loading and tab switching
 
 ### How to Contribute
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch (`git checkout -b feature/<your_new_feature>`)
+3. Commit your changes (`git commit -m 'Add some <your_new_feature>'`)
+4. Push to the branch (`git push origin feature/<your_new_feature>`)
 5. Open a Pull Request
 
-## ⚙️ Configuration
-
-The application can be configured through the sidebar interface:
-- Model selection
-- Temperature adjustment
-- Context length settings
-- System monitoring 
 
 ## 📝 License
 
@@ -87,8 +91,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 🔮 Future Plans
 
-- Conversation memory persistence
-- Multi-model chat sessions
 - Advanced prompt templates
 - Custom model configuration
 - Performance optimization tools
@@ -96,9 +98,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## ⚠️ Known Limitations
 
-- Currently no persistent memory between sessions
 - Limited to models available through Ollama
-- Single conversation context at a time
+
 
 ## 📞 Support
 
