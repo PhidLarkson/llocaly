@@ -2,9 +2,6 @@
 
 A streamlit-based interface for interacting with local AI models through Ollama.
 
-![image](https://github.com/user-attachments/assets/185f1a64-5cb9-40a6-ad59-72cca3cb55fd)
-
-
 
 ## 🚀 Features
 
