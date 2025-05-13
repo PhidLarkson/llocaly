@@ -34,6 +34,6 @@ echo installing dependencies...
 pip install -r requirements.txt
 
 echo starting LLocaly application...
-python -m streamlit run app/main.py --server.headless true --browser.serverAddress "localhost"
+python -m streamlit run main.py --server.headless true --browser.serverAddress "localhost"
 
 pause
